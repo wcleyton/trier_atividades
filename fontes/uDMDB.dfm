@@ -9,16 +9,17 @@ object FDMDB: TFDMDB
       'Password=root'
       'Server=127.0.0.1'
       'DriverID=PG')
-    Connected = True
     LoginPrompt = False
     Left = 40
     Top = 16
   end
   object qyTipoAtividade: TFDQuery
-    Active = True
     Connection = DB
     SQL.Strings = (
-      'select * from "TIPO_ATIVIDADE";')
+      'SELECT * from "TIPO_ATIVIDADE"'
+      ''
+      ''
+      '')
     Left = 32
     Top = 72
     object qyTipoAtividadeID_TIPO: TIntegerField
@@ -33,10 +34,10 @@ object FDMDB: TFDMDB
     end
   end
   object qyAtividades: TFDQuery
-    Active = True
     Connection = DB
     SQL.Strings = (
-      'select * from "ATIVIDADES";')
+      'select * from "ATIVIDADES"'
+      'WHERE "STATUS"='#39'A'#39' or "STATUS"='#39'C'#39)
     Left = 120
     Top = 72
     object qyAtividadesID_ATIVIDADE: TIntegerField

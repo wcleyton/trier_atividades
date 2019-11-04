@@ -8,15 +8,16 @@ uses
   uFuncoesGerais in 'uFuncoesGerais.pas',
   uNovaAtividade in 'uNovaAtividade.pas' {FNovaAtividade},
   uAtividadesControler in 'uAtividadesControler.pas',
-  uEditarAtividade in 'uEditarAtividade.pas' {FEditarAtividade};
+  uEditarAtividade in 'uEditarAtividade.pas' {FEditarAtividade},
+  uConfiguraBanco in 'uConfiguraBanco.pas' {FConfiguraBanco};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFDMDB, FDMDB);
   Application.CreateForm(TFAtividades, FAtividades);
   Application.CreateForm(TFPrincipal, FPrincipal);
-  Application.CreateForm(TFDMDB, FDMDB);
   Application.Run;
 end.

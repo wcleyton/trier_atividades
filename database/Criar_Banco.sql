@@ -20,10 +20,28 @@ CREATE TABLE "ATIVIDADES" (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Teste Titulo','Teste Descricao',1,'A');
-INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Teste Titulo','Teste Descricao',3,'C');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Desenvolvimento','Teste Desenvolvimento',1,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Atendimento','Teste Atendimento',2,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção','Teste manutenção',3,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção Urgente','Teste manutenção Urgente',4,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Desenvolvimento','Teste Desenvolvimento',1,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Atendimento','Teste Atendimento',2,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção','Teste manutenção',3,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção Urgente','Teste manutenção Urgente',4,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Desenvolvimento','Teste Desenvolvimento',1,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Atendimento','Teste Atendimento',2,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção','Teste manutenção',3,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção Urgente','Teste manutenção Urgente',4,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Desenvolvimento','Teste Desenvolvimento',1,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Atendimento','Teste Atendimento',2,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção','Teste manutenção',3,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção Urgente','Teste manutenção Urgente',4,'A');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Desenvolvimento','Teste Desenvolvimento',1,'C');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Atendimento','Teste Atendimento',2,'C');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção','Teste manutenção',3,'C');
+INSERT INTO "ATIVIDADES" ("TITULO","DESCRICAO","TIPO","STATUS") VALUES ('Atv Manutenção Urgente','Teste manutenção Urgente',4,'C');
 
-SELECT * FROM "TIPO_ATIVIDADE";
-SELECT * FROM "ATIVIDADES";
+-- SELECT * FROM "TIPO_ATIVIDADE";
+-- SELECT * FROM "ATIVIDADES";
 
 commit;

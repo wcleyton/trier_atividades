@@ -16,6 +16,7 @@ function CancelarAtividade(DS: TDataSet): Boolean;
 function EditarAtividade(DS: TDataSet): Boolean;
 function ConcluirAtividade(DS: TDataSet): Boolean;
 function RemoverAtividade(DS: TDataSet): Boolean;
+function FiltrarAtividades(qy: TFDQuery; Abertas, Concluidas: Boolean): Boolean;
 
 implementation
 
@@ -67,6 +68,16 @@ end;
 function EditarAtividade(DS: TDataSet): Boolean;
 begin
   Result := False;
+
+  if (DS.FieldByName('TIPO').AsInteger = 4) then
+  begin
+    if (SextaFeira) and (Apos13Horas) then
+    begin
+      mensagem('Atividade de Manutenção Urgente não pode ser criada 6a. feira após 13:00');
+      Abort;
+    end;
+  end;
+
   if (DS.FieldByName('STATUS').AsString = 'A') then
   begin
     try
@@ -113,12 +124,44 @@ begin
   end
   else
   begin
-    try
-      DS.Delete;
-      Result := True;
-    except
-      Result := False;
+    if pergunta('Confirma Exclusão?') then
+    begin
+      try
+        DS.Delete;
+        Result := True;
+      except
+        Result := False;
+      end;
     end;
+  end;
+end;
+
+function FiltrarAtividades(qy: TFDQuery; Abertas, Concluidas: Boolean): Boolean;
+var
+  comandoSQL: String;
+begin
+  comandoSQL := 'SELECT * from "ATIVIDADES"';
+
+  if (Abertas) and (Concluidas) then
+    comandoSQL := comandoSQL + ' WHERE "STATUS"=' + QuotedStr('A') +
+      ' OR "STATUS"=' + QuotedStr('C')
+  else if (Abertas) then
+    comandoSQL := comandoSQL + ' WHERE "STATUS"=' + QuotedStr('A')
+  else if (Concluidas) then
+    comandoSQL := comandoSQL + ' WHERE "STATUS"=' + QuotedStr('C')
+  else
+    comandoSQL := '';
+
+  Result := True;
+  try
+    qy.Close;
+    qy.SQL.Clear;
+    qy.SQL.Add(comandoSQL);
+    qy.Prepare;
+    qy.Open;
+    Result := True;
+  except
+    Result := False;
   end;
 end;
 
