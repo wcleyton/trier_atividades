@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/02 10:44:15.000.440,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2019/11/02 10:46:05.000.467,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit6.pas=C:\Trier_Atividades\uPrincipal.pas</Transaction>
+    <Transaction>2019/11/02 10:46:05.000.467,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit6.dfm=C:\Trier_Atividades\uPrincipal.dfm</Transaction>
+    <Transaction>2019/11/02 10:46:44.000.311,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Project6.dproj=C:\Trier_Atividades\Atividades.dproj</Transaction>
+    <Transaction>2019/11/02 17:10:53.000.968,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 17:11:35.000.152,C:\Trier_Atividades\uDMDB.pas=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 17:11:35.000.152,C:\Trier_Atividades\uDMDB.dfm=C:\Trier_Atividades\Unit1.dfm</Transaction>
+    <Transaction>2019/11/02 19:13:00.000.379,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 20:12:09.000.136,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 20:12:24.000.892,C:\Trier_Atividades\Unit1.pas=C:\Trier_Atividades\uAtividades.pas</Transaction>
+    <Transaction>2019/11/02 20:12:24.000.892,C:\Trier_Atividades\Unit1.dfm=C:\Trier_Atividades\uAtividades.dfm</Transaction>
+    <Transaction>2019/11/03 09:23:57.000.564,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 09:24:51.000.603,C:\Trier_Atividades\uFuncoesGerais.pas=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 19:35:03.000.001,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 19:36:11.000.095,C:\Trier_Atividades\uNovaAtividade.dfm=C:\Trier_Atividades\Unit1.dfm</Transaction>
+    <Transaction>2019/11/03 19:36:11.000.095,C:\Trier_Atividades\uNovaAtividade.pas=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 21:39:43.819,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 21:40:31.025,C:\Trier_Atividades\uAtividadesControler.pas=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 22:19:43.041,=C:\Trier_Atividades\Unit1.pas</Transaction>
+    <Transaction>2019/11/03 22:20:03.227,C:\Trier_Atividades\uEditarAtividade.dfm=C:\Trier_Atividades\Unit1.dfm</Transaction>
+    <Transaction>2019/11/03 22:20:03.227,C:\Trier_Atividades\uEditarAtividade.pas=C:\Trier_Atividades\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
